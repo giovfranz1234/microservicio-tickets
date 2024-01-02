@@ -17,7 +17,6 @@ public class TicketController {
 
   @GetMapping
     public List <Usuario>usuariosdtick(){
-
       return ticketService.obtUsuarios();
   }
 
