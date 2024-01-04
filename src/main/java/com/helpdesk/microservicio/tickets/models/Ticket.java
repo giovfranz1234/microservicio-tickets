@@ -3,17 +3,31 @@ package com.helpdesk.microservicio.tickets.models;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 @Entity
 @Table(name = "tickets")
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private Long id;
+    @Column(name="descripcion")
     private String descripcion;
+    @Column(name="estado")
     private String estado;
+    @Column(name="prioridad")
     private String prioridad;
+    @Column(name="idUsuario")
+    private Long CreadoPor;
 
-    private Usuario CreadoPor;
-
+    @Column(name="fechaReg")
+    private Date fechaRegistro;
+    @Column(name="fechaInicio")
+    private Date fechaInicio;
+    @Column(name="fechaFin")
+    private Date fechaFin;
+    @Column(name="idHistorial")
+    private Long Historial;
 }
