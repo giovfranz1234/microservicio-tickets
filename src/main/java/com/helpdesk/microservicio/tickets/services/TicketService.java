@@ -1,6 +1,6 @@
 package com.helpdesk.microservicio.tickets.services;
 
-import com.helpdesk.microservicio.tickets.clients.UsuarioFeingClient;
+
 import com.helpdesk.microservicio.tickets.models.Ticket;
 import com.helpdesk.microservicio.tickets.models.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,5 +16,5 @@ public interface TicketService {
 
     public Ticket save(Ticket ticket);
     public void deleteById(Long id);
-   public List<Usuario> obtUsuarios();
+
 }
