@@ -62,6 +62,7 @@ public class TicketController {
     return ResponseEntity.noContent().build();
 
   }
+
   @GetMapping
     public List <Usuario>usuariosdtick(){
       return ticketService.obtUsuarios();
