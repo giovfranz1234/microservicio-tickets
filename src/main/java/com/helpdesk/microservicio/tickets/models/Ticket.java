@@ -17,8 +17,8 @@ public class Ticket {
     private String descripcion;
     @Column(name="idEquipo")
     private Long dispositivo;
-    @Column(name="idUsuario")
-    private String asignadoa;
+    @Column(name="idTecnico")
+    private Long asignadoa;
     @Column(name="estado")
     private String estado;
     @Column(name="prioridad")

@@ -40,11 +40,11 @@ public class TicketServiceImpl implements TicketService {
         ticketRepository.deleteById(id);
     }
 
-    @Override
+   /* @Override
     public List<Usuario> obtUsuarios() {
         return usuarioFeingClient.obtUsuarios();
     }
-
+*/
 
 }
 

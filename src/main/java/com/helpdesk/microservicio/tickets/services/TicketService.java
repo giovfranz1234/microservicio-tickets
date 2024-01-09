@@ -16,5 +16,5 @@ public interface TicketService {
 
     public Ticket save(Ticket ticket);
     public void deleteById(Long id);
-   public List<Usuario> obtUsuarios();
+   /*public List<Usuario> obtUsuarios();*/
 }
