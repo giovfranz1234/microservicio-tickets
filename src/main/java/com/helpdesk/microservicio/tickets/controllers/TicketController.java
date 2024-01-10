@@ -62,10 +62,10 @@ public class TicketController {
     return ResponseEntity.noContent().build();
 
   }
-/*
-  @GetMapping
+
+  @GetMapping("/usuarios")
     public List <Usuario>usuariosdtick(){
       return ticketService.obtUsuarios();
-  }*/
+  }
 
 }
